@@ -9,6 +9,10 @@ header {
     color: #fff;
 }
 
+header img {
+    height: 6rem;
+}
+
 header .jumbotron {
     background: transparent;
 }
