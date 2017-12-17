@@ -1,0 +1,48 @@
+/*Header styles: Luiz Furtado*/
+header {
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url("../img/header-bg-md.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    position: relative;
+    color: #fff;
+}
+
+header img {
+    height: 6rem;
+}
+
+header .jumbotron {
+    background: transparent;
+}
+
+
+/*Footer styles: Luiz Furtado*/
+footer div.social {
+    text-align: center;
+    font-size: 3rem;
+    color: rgb(50, 230, 65);
+}
+
+footer address a:link,
+footer address a:visited,
+footer address a:hover,
+footer address a:active {
+    color: #000;
+}
+
+footer div nav {
+    display: inline-block;
+    text-align: right;
+}
+
+footer a.nav-link:link,
+footer a.nav-link:visited {
+    color: #000;
+}
+
+footer a.nav-link:hover,
+footer a.nav-link:active {
+    text-decoration: underline;
+}

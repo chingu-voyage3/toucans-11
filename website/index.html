@@ -5,23 +5,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
     <link rel="stylesheet" href="css/styles.css">
+
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
     <script src="js/script.js"></script>
+
     <title>Fundación Biored</title>
 </head>
 
 <body>
     <header id="" class="" role="banner">
+        <!-- Edit to Jason's code - added bootstrap 
         <div class="site-branding">
             <h1 class="site-title">
                 <a href="" rel="home">FUNDACIÓN BIORED</a>
             </h1>
             <p class="site-description">Promoting the harmonious relationship between man and nature</p>
         </div>
-        <nav id="site-navigation" role="navigation">
+        -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary" id="site-navigation" role="navigation">
+            <!-- Edit to Jason's code - added bootstrap
             <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
                 <font style="vertical-align: inherit;">
                     <font style="vertical-align: inherit;"></font>
@@ -35,7 +52,24 @@
                     <li><a href="">Contact</a></li>
                 </ul>
             </div>
+            -->
+            <div class="navbar-brand">
+                <img src="img/biored-logo.png" alt="Fundación Biored Logo">
+                <span class="navbar-text d-none d-md-inline-block">Promoting the harmonious relationship between man and nature</span>
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link" href="#">What we do</a>
+                    <a class="nav-item nav-link" href="#">Who we are</a>
+                    <a class="nav-item nav-link" href="#">Our Partners</a>
+                    <a class="nav-item nav-link" href="#">Contact</a>
+                </div>
+            </div>
         </nav>
+        <!-- Edit to Jason's code - added bootstrap
         <div class="hero-image">
             <div class="hero-text">
                 <h2>Building a better world today...</h2>
@@ -43,116 +77,130 @@
                 <button><a href="">Know more</a></button>
                 <button><a href="">Contact us</a></button>
             </div>
+        </div>-->
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+                <h1 class="display-4">Building a better world today
+                    <br>
+                    So we can have a home tomorrow
+                </h1>
+                <a class="btn btn-info" role="button" href="#">Know More</a>
+                <a class="btn btn-success" role="button" href="#">Join Us</a>
+            </div>
         </div>
         <!-- TODO: header section
             - Brand and navigation
             - Hero section: picture as background, text and CTA
          -->
     </header>
-    <!-- TODO: section who we are
-        - header (h2) who we are
-        - Text section with organization description
-     -->
-    <section>
-        <h2>Who We Are</h2>
-        <h3>BIORED TEAM</h3>
-        <h4>Dr. Claudia M. Dellafiore</h4>
-        <p>Dra. In Biological Sciences, Mg. Sc. In Management and Conservation of Biodiversity, Mg. Sc. In Wildlife Management. He worked at the University of Seville - Spain, Administration of National Parks, INTA and various National and International Consultants. Currently, she is an Exclusive Effective Ajunta Professor at the UNRC and SeCyT UNRC Researcher.</p>
-        <h4>Med. Vet. Giselle Peñaloza</h4>
-        <p>Veterinary Medical. Founding member of the Fauna Group UNRC, year 2009 until 2013. Performed Postgraduate Veterinary Epidemiology, organized by the Veterinary Medical College of the Province of Córdoba. He is currently working in the Clinic for Small Animals and Non-Traditional Animals.</p>
-        <h4>Med. Vet. Pablo Bizzari</h4>
-        <p>Veterinarian. President of the Fauna Group UNRC from April 16, 2012 to April 19, 2013. Zoning Coordinator of the Reserve of Multiple Uses La Rancherita and Las Cascadas in the Province of Córdoba. Dictation of courses and publications on snakes of Córdoba.</p>
-        <h4>Journalist José Artolazabal</h4>
-        <p>Journalist in the newspaper PUNTAL of Río Cuarto, since November 1980. He is currently editor and editor of the National and International News section. He worked in the newspaper PUNTAL San Luis. He also fulfilled functions in the Final Correction section.</p>
-    </section>
-    <!-- TODO: section what we do(section proposal change) 
-        - header (h2) what we do
-        - Description text about organization vision and mission
-        - know more link to projects page(?)
-    -->
-    <section>
-        <h2>What We Do</h2>
-        <p>We are a non-governmental non-profit organization that operates in Argentina, based in the Province of Córdoba, with the mission of promoting a harmonious relationship between man and nature.</p>
-        <p>To achieve our mission, we developed three action programs.</p>
-        <p>CONSERVATION PROGRAM: This program aims to conserve biodiversity at its five levels of organization: genetics, species, communities or ecosystems, regional or landscape and cultural.</p>
-        <p>EDUCATION AND COMMUNICATION PROGRAM: This program aims to transform biodiversity conservation strategies into actions.</p>
-        <p>MANAGEMENT PROGRAM: This program has, among other objectives, to collaborate with as many people, physical or legal, organisms and institutions, public or private, national or foreign, to act in those fields and have the same or similar objectives.</p>
-    </section>
-    <!-- TODO: section partners
-        - header (h2) our partners (supporters)
-        - Brand logos that are links to supporters pages
-        - Testimonials from supporters?
-     -->
-    <section>
-        <h2>Our Friends</h2>
-        <ul>
-            <li>Inter-institutional agreement Biored Foundation and Municipality of Almafuerte</li>
-            <li>Framework Agreement for Cooperation and Complementation between the Biored Foundation and the Zoological Garden of Córdoba. The Foundation is part of the Group for the Conservation of the Bear Melero ( Tamandua tetradactila ) of the Province of Córdoba, formed by the Secretariat of Environment and Climate Change of the Ministry of Water, Environment and Public Services of the Government of Córdoba, researchers and specialists ( CONICET Córdoba, National University of Córdoba), zoos and reserves, museums, non-governmental organizations (NGOs) and locals from the north of our province.Its general objective is to contribute to the knowledge and conservation of the species at a regional level, developing management, research, education and awareness actions on the species ". For any information or sighting of any specimen, contact the Secretariat at tel .: 0351 - 4343310/14 int. 219 or the Zoo of Córdoba to tel. : 0351-4217648</li>
-        </ul>
-    </section>
-    <!-- TODO: section contact
-        - Address and contact phones and e-mails
-        - volunteer submission form
-        - message form
-        - subscribe to newsletter? 
-    -->
-    <section>
-        <h2>Contact Us</h2>
-        <form id="contact-form" method="post" action="contact.php" role="form">
-            <div class="messages"></div>
-            <div class="controls">
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <label for="form_name">Firstname *</label>
-                            <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your firstname *" required="required" data-error="Firstname is required.">
-                            <div class="help-block with-errors"></div>
+    <main class="container">
+        <!-- TODO: section what we do(section proposal change) 
+            - header (h2) what we do
+            - Description text about organization vision and mission
+            - know more link to projects page(?)
+        -->
+        <section>
+            <h2>What We Do</h2>
+            <p>We are a non-governmental non-profit organization that operates in Argentina, based in the Province of Córdoba, with the mission of promoting a harmonious relationship between man and nature.</p>
+            <p>To achieve our mission, we developed three action programs.</p>
+            <p>CONSERVATION PROGRAM: This program aims to conserve biodiversity at its five levels of organization: genetics, species, communities or ecosystems, regional or landscape and cultural.</p>
+            <p>EDUCATION AND COMMUNICATION PROGRAM: This program aims to transform biodiversity conservation strategies into actions.</p>
+            <p>MANAGEMENT PROGRAM: This program has, among other objectives, to collaborate with as many people, physical or legal, organisms and institutions, public or private, national or foreign, to act in those fields and have the same or similar objectives.</p>
+        </section>
+
+        <!-- TODO: section who we are
+            - header (h2) who we are
+            - Text section with organization description
+        -->
+        <section>
+            <h2>Who We Are</h2>
+            <h3>BIORED TEAM</h3>
+            <h4>Dr. Claudia M. Dellafiore</h4>
+            <p>Dra. In Biological Sciences, Mg. Sc. In Management and Conservation of Biodiversity, Mg. Sc. In Wildlife Management. He worked at the University of Seville - Spain, Administration of National Parks, INTA and various National and International Consultants. Currently, she is an Exclusive Effective Ajunta Professor at the UNRC and SeCyT UNRC Researcher.</p>
+            <h4>Med. Vet. Giselle Peñaloza</h4>
+            <p>Veterinary Medical. Founding member of the Fauna Group UNRC, year 2009 until 2013. Performed Postgraduate Veterinary Epidemiology, organized by the Veterinary Medical College of the Province of Córdoba. He is currently working in the Clinic for Small Animals and Non-Traditional Animals.</p>
+            <h4>Med. Vet. Pablo Bizzari</h4>
+            <p>Veterinarian. President of the Fauna Group UNRC from April 16, 2012 to April 19, 2013. Zoning Coordinator of the Reserve of Multiple Uses La Rancherita and Las Cascadas in the Province of Córdoba. Dictation of courses and publications on snakes of Córdoba.</p>
+            <h4>Journalist José Artolazabal</h4>
+            <p>Journalist in the newspaper PUNTAL of Río Cuarto, since November 1980. He is currently editor and editor of the National and International News section. He worked in the newspaper PUNTAL San Luis. He also fulfilled functions in the Final Correction section.</p>
+        </section>
+        
+        <!-- TODO: section partners
+            - header (h2) our partners (supporters)
+            - Brand logos that are links to supporters pages
+            - Testimonials from supporters?
+        -->
+        <section>
+            <h2>Our Friends</h2>
+            <ul>
+                <li>Inter-institutional agreement Biored Foundation and Municipality of Almafuerte</li>
+                <li>Framework Agreement for Cooperation and Complementation between the Biored Foundation and the Zoological Garden of Córdoba. The Foundation is part of the Group for the Conservation of the Bear Melero ( Tamandua tetradactila ) of the Province of Córdoba, formed by the Secretariat of Environment and Climate Change of the Ministry of Water, Environment and Public Services of the Government of Córdoba, researchers and specialists ( CONICET Córdoba, National University of Córdoba), zoos and reserves, museums, non-governmental organizations (NGOs) and locals from the north of our province.Its general objective is to contribute to the knowledge and conservation of the species at a regional level, developing management, research, education and awareness actions on the species ". For any information or sighting of any specimen, contact the Secretariat at tel .: 0351 - 4343310/14 int. 219 or the Zoo of Córdoba to tel. : 0351-4217648</li>
+            </ul>
+        </section>
+        <!-- TODO: section contact
+            - Address and contact phones and e-mails
+            - volunteer submission form
+            - message form
+            - subscribe to newsletter? 
+        -->
+        <section>
+            <h2>Contact Us</h2>
+            <form id="contact-form" method="post" action="contact.php" role="form">
+                <div class="messages"></div>
+                <div class="controls">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="form_name">Firstname *</label>
+                                <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your firstname *" required="required" data-error="Firstname is required.">
+                                <div class="help-block with-errors"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="form_lastname">Lastname *</label>
+                                <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Please enter your lastname *" required="required" data-error="Lastname is required.">
+                                <div class="help-block with-errors"></div>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <label for="form_lastname">Lastname *</label>
-                            <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Please enter your lastname *" required="required" data-error="Lastname is required.">
-                            <div class="help-block with-errors"></div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="form_email">Email *</label>
+                                <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
+                                <div class="help-block with-errors"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="form_phone">Phone</label>
+                                <input id="form_phone" type="tel" name="phone" class="form-control" placeholder="Please enter your phone">
+                                <div class="help-block with-errors"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label for="form_message">Message *</label>
+                                <textarea id="form_message" name="message" class="form-control" placeholder="Message for me *" rows="4" required="required" data-error="Please,leave us a message."></textarea>
+                                <div class="help-block with-errors"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <input type="submit" class="btn btn-success btn-send" value="Send message">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p class="text-muted"><strong>*</strong> These fields are required. Contact form template by <a href="http://bootstrapious.com" target="_blank">Bootstrapious</a>.</p>
                         </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <label for="form_email">Email *</label>
-                            <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
-                            <div class="help-block with-errors"></div>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <label for="form_phone">Phone</label>
-                            <input id="form_phone" type="tel" name="phone" class="form-control" placeholder="Please enter your phone">
-                            <div class="help-block with-errors"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="form-group">
-                            <label for="form_message">Message *</label>
-                            <textarea id="form_message" name="message" class="form-control" placeholder="Message for me *" rows="4" required="required" data-error="Please,leave us a message."></textarea>
-                            <div class="help-block with-errors"></div>
-                        </div>
-                    </div>
-                    <div class="col-md-12">
-                        <input type="submit" class="btn btn-success btn-send" value="Send message">
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        <p class="text-muted"><strong>*</strong> These fields are required. Contact form template by <a href="http://bootstrapious.com" target="_blank">Bootstrapious</a>.</p>
-                    </div>
-                </div>
-            </div>
-        </form>
-    </section>
+            </form>
+        </section>
+    </main>
     <!-- TODO: section footer
         - Social media links
         - links to pages:
@@ -160,8 +208,33 @@
             - Projects page
             - Suggestions? 
     -->
-    <footer>
+    <footer class="container-fluid">
+        <div class="social">
+            <h2>Follow us on Social Media</h2>
+            <i class="fa fa-facebook-official" aria-hidden="true"></i>
+            <i class="fa fa-instagram" aria-hidden="true"></i>
+            <i class="fa fa-twitter-square" aria-hidden="true"></i>
+        </div>
+        <hr class="my-4">
+        <div class="info row">
+            <div class="col-sm">
+                <address>
+                    <strong>Fundación Biored</strong><br>
+                    1234 Street<br>
+                    Cordoba, Argentina<br>
+                    Phone: (123) 456-7890<br>
+                    <a href="mailto:conacto@fundacionbiored.ar">contacto@fundacionbiored.ar</a>
+                </address>
+            </div>
+            <div class="col-sm">
+                <nav class="nav flex-column">
+                   <a class="nav-link" href="#">Our History</a>
+                   <a class="nav-link" href="#">Our Vision</a>
+                   <a class="nav-link" href="#">Our Actions</a>
+                   <a class="nav-link" href="#">Know our Staff</a>
+                </nav>
+            </div>
+        </div>
     </footer>
 </body>
-
 </html>
